@@ -1,0 +1,338 @@
+body{
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url('imgs/fond.jpg');
+  font-family: k2D; /*police*/
+  border: solid 2px white;/*bordure blache qui entoure la body*/
+}
+
+a{
+  text-decoration: none;/*supprimer le souligne ment de tou les liens*/
+}
+
+h2{
+  margin-left: 2%;
+}
+
+header{/*style pour le header*/
+  width: 80%;
+  height: 255px;
+  background-image: url('imgs/bandeau.jpg');
+  background-color: #001500;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: auto;
+  border-top: solid 2px white;
+  border-right: solid 2px white;
+  border-left: solid 2px white;
+}
+
+nav{/*style du menu de navigation */
+  position: fixed;
+  width: 79.7%;
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+nav ul{/*style des ul dans le menu*/
+  display: flex;
+  justify-content: space-around;
+  padding-inline-start: 0 !important;
+}
+
+nav ul li a:hover{/*au survol d'un element du menu*/
+  cursor: pointer;
+  color: #55a630;
+}
+
+li{
+  list-style: none;/*suprime les "." sur les li*/
+}
+
+nav ul li{/*style des li dans le nav au niveau du menu*/
+  padding-left: 7%;
+  width: -webkit-fill-available;
+}
+
+nav ul li a{/*style des balise a dans le nav au niveau du menu*/
+  font-size: small;
+}
+
+#homme_links{/*menu qui doit etre visible au survol de "Le Domaine"*/
+  visibility: hidden;/*par defaut caché*/
+  display: none;
+}
+
+#domaine:hover #homme_links{/*au survol de "Le Domaine" les style à aplliquer*/
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 18px;
+  left: -47px;
+}
+
+#homme_links a{/*style des liens dans le menu visible au survol de "Le Domaine"*/
+  margin: 2px;
+  color: white;
+  background: black;
+  width: 200px;
+  padding: 5%;
+  text-align: center;
+}
+
+main{/*partie principale des deux page diviser en deux partie disposer cote à cote*/
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  background-color: #001500;
+  min-height: 500px;
+  border-right: solid 2px white;
+  border-left: solid 2px white;
+}
+
+#home_left{/*page d'accueil section gauche*/
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#event_title img{/*l'image au niveau de "Les événements"*/
+  width: 10%;
+}
+
+#home_left p:first-child{/*premier paragraphe section gauche de la page d'accueil*/
+  background-color: white;
+  text-align: center;
+  font-size: x-large;
+  margin: 0;
+}
+
+#home_left article{/*section contenant le text section gauche de la page d'accueil*/
+  background-color: white;
+}
+
+article div{
+  text-align: center;
+}
+
+#home_left p{
+  margin: 3%;
+}
+
+#home_left div:first-child{
+  background-color: white;
+}
+
+#home_left h3{/*le lien inscrivez vous partie gache page d'accueil*/
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  text-decoration: underline;
+}
+
+#home_left h3 a{
+  color: white;
+  margin: 10px;
+}
+
+span img{/*image entre le titre et le text de la section gauche page d'accueil*/
+  width: 100%;
+}
+
+#home_right{/*page d'accueil section droite decomposée en deux grande section*/
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#welcome{/*section tout en haut de la la section droite de la page d'accueil*/
+  background-image: url('imgs/bienvenue.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+  height: 245px;
+  text-align: center;
+}
+
+#services_une{/*section en bas de la la section droite de la page d'accueil divisée en deux sous partie*/
+  display: flex;
+  justify-content: space-between;
+}
+
+#services_une h4{/*tout les h4 dans la section en bas de la la section droite de la page d'accueil*/
+  background-color: black;
+  padding: 8px;
+  margin: 0;
+}
+
+#services{/*page d'accueil sectionservices*/
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+#services ul{/*liste des services*/
+  display: flex;
+  flex-direction: column;
+  text-decoration: underline;
+  padding-inline-start: 0 ! important;
+}
+
+li a{/*tous les liens dans une balise li*/
+  margin: 5px;
+  color: white;
+}
+
+#une{/*partie à la une*/
+  width: 40%;
+}
+
+#contact_left{/*section gauche de la page d'accueil*/
+  width: 55%;
+}
+
+form{/*formulaire de contact*/
+  display: flex;
+  flex-direction: column;/*dispostion en colone*/
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px #AA8;/*effet obre*/
+  border: solid 2px gray;
+  padding-bottom: 15px;
+}
+
+.form_input{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.form_input span{
+  margin-left: 5%;
+}
+
+.form_input input{/*style des balises input*/
+  margin-right: 10%;
+  width: 225px;
+  background-color: #001500;
+  border-radius: 5px;
+}
+
+.form_input input[type=file]{/*style des balises input de type file*/
+  margin-right: 10%;
+  width: 225px;
+  background-color: #001500;
+  border-radius: 5px;
+  padding: 4px;
+  color: white;
+  font-size: x-small;
+}
+
+.form_input select{/*style des balises select*/
+  margin-right: 10%;
+  width: 234px;
+}
+
+.form_input textarea{/*style des balises textarea*/
+  margin-right: 10%;
+  width: 229px;
+  background-color: #001500;
+  border-radius: 5px;
+}
+
+#statut{/*bordure encadrant les radiobutton*/
+  border: solid 2px #001500;
+  width: 90%;
+  height: 40px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+#statut span{/*le text "vous etes" on fait en sorte de la positionner sur la bordure*/
+  position: relative;
+  top: -13px;
+  left: 11px;
+  background: white;
+  padding: 2px;
+}
+
+#niveau{
+  display: flex;
+}
+
+#niveau span{
+  width: 40%;
+}
+
+#control{/*section contenant les deux boutons du formulaire*/
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+input:focus{/*changement de couleur de fond quand un input prend le focus*/
+  background-color: white;
+}
+
+textarea:focus{/*changement de couleur de fond quand un textarea prend le focus*/
+  background-color: white;
+}
+
+#buton{
+  margin-right: 10%;
+  width: 231px;
+}
+
+button{
+  background-color: #001500;
+  color: white;
+}
+
+#contact_right{/*partie droite de la page contact*/
+  width: 35%;
+  text-align: center;
+  color: white;
+}
+
+#map{/*le conteneur le la cate google*/
+  width: 98%;
+  overflow: hidden;
+  height: 320px;
+}
+
+#contact_right a{
+  color: white;
+  font-size: larger;
+}
+
+#mapshow{
+  height: 27px;
+}
+
+#fram{
+  margin-left: 372px;
+}
+
+#mapshow:hover #fram{
+  margin-left: 0px;
+  transition: 5s;
+}
+
+footer{/*footer*/
+  width: 80%;
+  display: table;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: auto;
+  border-right: solid 2px white;
+  border-left: solid 2px white;
+  border-bottom: solid 2px white;
+}

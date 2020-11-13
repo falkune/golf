@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- inclusion du lien pour fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <!-- lien google font pour pouvoir utiliser la police K2D -->
+  <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,500;1,100;1,300&display=swap" rel="stylesheet">
+  <!-- link de notre feuille de style -->
+  <link rel="stylesheet" href="style.css">
+  <title>Contact</title>
+</head>
+<body>
+  <!-- le header qui contion le menue de navigation et une baniere image -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="#"><i class="fas fa-map-marker"></i> Parcours</a></li>
+        <li id="domaine"><a href="#"><i class="fas fa-bell"></i> Le Domaine</a>
+          <div id="homme_links">
+            <a>Le parc</a>
+            <a>Hôtel</a>
+            <a>Restaurants</a>
+          </div>
+        </li>
+        <li><a href="#"><i class="fas fa-clock"></i> Les Tournois</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- partie principale divisée en deux section -->
+  <main>
+    <section id="contact_left">
+      <form action="">
+        <h2>Contactez le Golf CEFii :</h2>
+        <div class="form_input">
+          <span>Nom* :</span> 
+          <input type="text" name="nom" placeholder="votre nom" required>
+        </div>
+        <div class="form_input">
+          <span for="nom">Prenom :</span>
+          <input type="text" name="prenom" placeholder="votre prenom">
+        </div>
+        <div class="form_input">
+          <span for="nom">Emai* :</span>
+          <input type="email" name="prenom" placeholder="xxx@yyy.zz" required>
+        </div>
+        <div class="form_input">
+          <span for="nom">Téléphone :</span>
+          <input type="email" name="prenom" placeholder="0123456789">
+        </div>
+        <div id="statut">
+          <span>Vous êtes :</span>
+          <div id="niveau">
+            <span>
+              <input type="radio" name="niveau" value="Amateur">
+              <label for="amateur">Amateur</label>
+            </span>
+            <span>
+              <input type="radio" name="niveau" value="Professionnel">
+              <label for="professionnel">Professionnel</label>
+            </span>
+          </div>
+        </div>
+        <div class="form_input">
+          <span>Vous souhaitez :</span>
+          <select name="" id="">
+            <option value="Reserver un parcours">Reserver un parcours</option>
+            <option value="Demander les tarifs">Demander les tarifs</option>
+            <option value="Vous inscrire à un tournoi">Vous inscrire à un tournoi</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        <div class="form_input">
+          <span for="nom">Votre message* :</span>
+          <textarea name="" id="" cols="30" rows="5" required></textarea>
+        </div>
+        <div class="form_input">
+          <span for="nom">Pièce jointe :</span>
+          <input type="file">
+        </div>
+        <div id="control">
+          <span> </span>
+          <div id="buton">
+            <button>Effacer</button>
+            <button>Valider</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section id="contact_right">
+      <ul>
+        <li id="mapshow"><a href="">Nous rejoindre</a>
+          <div id="map">
+            <iframe id="fram" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.2561745739604!2d-0.5612453844363912!3d47.46543717917555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878b8e7daa2af%3A0x9597307dfed5d7f0!2s11%20Place%20Pierre%20Semard%2C%2049100%20Angers!5e0!3m2!1sfr!2sfr!4v1604632192988!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>@Copyrigth 2014 | Production interne | ® Tous droits réservées</p>
+  </footer>
+</body>
+</html>
